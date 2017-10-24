@@ -20,7 +20,11 @@ title:  Building openalpr from source in ubuntu 16.04
 * Tesseract:
   - ./configure --prefix=$HOME/alpr/local --with-extra-libraries=$HOME/alpr/local/lib
   - make -j4 && make install
-
+* openalpr:
+  - src/CMakeLists.txt: add 'set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11 ")' after 'set(CMAKE_CSS_FLAGS_RELEASE "${CMAKE_CXX_FLAGS_RELEASE} -Wall ")' - of coz, pls add '-std=c++11' for this line too.
+  - src/cmake_modules/FindTesseract.cmake: add the directories of $HOME/alpr/local and $HOME/alpr/local/[tesseract, leptonic] for the path definitions
+  - /src/cmake_modules/Findlog4cplus.cmake: similar changes as above
+  
 
 ## 3. Issues
 
