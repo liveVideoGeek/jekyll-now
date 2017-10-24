@@ -12,14 +12,14 @@ title:  Building openalpr from source in ubuntu 16.04
 ## 2. Building 
 * NOTE: install all above building results to a specified directory, e.g., $HOME/alpr/local (pls mkdir it firstly)
 * log4cplus:
-** configure cmdline: CXXFLAGS+="-std=c++11" ./configure --prefix=$HOME/alpr/local --enable-static=yes --enable-shared=no
-** exec make -j 4 && make install
+  - CXXFLAGS+="-std=c++11" ./configure --prefix=$HOME/alpr/local --enable-static=yes --enable-shared=no
+  - make -j 4 && make install
 * Leptonic:
-** configure cmdline: CXXFLAGS+="-std=c++11" ./configure --prefix=$HOME/alpr/local
-** exec make -j 4 && make install
+  - CXXFLAGS+="-std=c++11" ./configure --prefix=$HOME/alpr/local
+  - make -j 4 && make install
 * Tesseract:
-** configure cmdline: ./configure --prefix=$HOME/alpr/local --with-extra-libraries=$HOME/alpr/local/lib
-** exec make -j4 && make install
+  - ./configure --prefix=$HOME/alpr/local --with-extra-libraries=$HOME/alpr/local/lib
+  - make -j4 && make install
 
 
 ## 3. Issues
