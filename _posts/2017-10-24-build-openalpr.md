@@ -29,6 +29,6 @@ title:  Building openalpr from source in ubuntu 16.04
   
 ## 3. Troubleshootings
 
-## 4. Refee: 
+## 4. References: 
 1. [openalpr from source](https://github.com/openalpr/openalpr/wiki/Compilation-instructions-(Ubuntu-Linux))
 2. [tesseract from source](https://github.com/tesseract-ocr/tesseract/wiki/Compiling#Linux)
