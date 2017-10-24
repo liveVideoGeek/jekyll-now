@@ -4,12 +4,12 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+Hi, welcome to my blog ;)
 
 ### More Information
 
-A place to include any other types of information that you'd like to include about yourself.
+A place to record my software building experiences.
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[liveVideoGeek at outlook dot com](mailto:liveVideoGeek@outlook.com)
