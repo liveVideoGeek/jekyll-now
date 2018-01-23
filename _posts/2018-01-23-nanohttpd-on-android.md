@@ -18,6 +18,7 @@ title:  Porting NanoHTTPD on Android
 ## 3. Coding a simple http server
 * create a new class in the AS project, saying named SimpleHttpd
 * construct the SimpleHttpd like the followings:
+
 ```java
 import java.io.IOException;
 import org.nanohttpd.protocols.http.IHTTPSession;
@@ -25,11 +26,6 @@ import org.nanohttpd.protocols.http.NanoHTTPD;
 import org.nanohttpd.protocols.http.request.Method;
 import org.nanohttpd.protocols.http.response.Response;
 import org.nanohttpd.util.ServerRunner;
-
-
-/**
- * Created by He on 2018/1/23.
- */
 
 public class SimpleHttpd extends NanoHTTPD {
     private final static int PORT = 8888;
@@ -49,8 +45,10 @@ public class SimpleHttpd extends NanoHTTPD {
     }
 }
 ```
+
 ## 4. Launch the server in Android app main class
 * MainActivity.java as the followings:
+
 ```java
 import java.io.IOException;
 
@@ -86,6 +84,7 @@ public class MainActivity extends AppCompatActivity {
 }
 ```
 * modify the AndroidManifest.xml as followings:
+
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
@@ -109,6 +108,7 @@ public class MainActivity extends AppCompatActivity {
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"></uses-permission>
     <uses-permission android:name="android.permission.INTERNET"></uses-permission>
 ```
+
 ## 5. test
 * build apk and launch the app from the android device
 * run 'curl -G http://ip:8888/hello_world' to see the output 
