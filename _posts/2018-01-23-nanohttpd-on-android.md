@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  2018/01/23 Porting NanoHTTPD on Android
+title:  2018/01/23 
 ---
 
-# Steps:
+# Using NanoHTTPD on Android
 
 ## 1. Build nanohttpd-core jar:
 * git clone the nanohttpd master source from [github](https://github.com/NanoHttpd/nanohttpd), version 2.3.2@2018/01/23
