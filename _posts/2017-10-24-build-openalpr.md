@@ -1,10 +1,9 @@
 ---
 layout: post
-title:  2017/10/24 Building openalpr from source in ubuntu 16.04
+title:  2017/10/24 
 ---
 
-# How-To:
-
+# Building openalpr from source in ubuntu 16.04
 ## 1. Get source:
 * git clone the openalpr master source from [github](https://github.com/openalpr/openalpr)
 * git clone log4cplus v1.2.0 from [source](https://sourceforge.net/projects/log4cplus/files/log4cplus-stable/1.2.0/)
