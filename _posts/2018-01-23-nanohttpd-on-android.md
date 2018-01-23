@@ -18,7 +18,7 @@ title:  Porting NanoHTTPD on Android
 ## 3. Coding a simple http server
 * create a new class in the AS project, saying named SimpleHttpd
 * construct the SimpleHttpd like the followings:
-```
+```java
 import java.io.IOException;
 import org.nanohttpd.protocols.http.IHTTPSession;
 import org.nanohttpd.protocols.http.NanoHTTPD;
@@ -51,7 +51,7 @@ public class SimpleHttpd extends NanoHTTPD {
 ```
 ## 4. Launch the server in Android app main class
 * MainActivity.java as the followings:
-```
+```java
 import java.io.IOException;
 
 import android.support.v7.app.AppCompatActivity;
@@ -86,7 +86,7 @@ public class MainActivity extends AppCompatActivity {
 }
 ```
 * modify the AndroidManifest.xml as followings:
-```
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="cn.roobot.simplehttpd">
